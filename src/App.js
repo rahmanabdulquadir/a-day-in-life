@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div style={{width: ['1380px']}} className=' mx-auto bg-base-200'>
+    <div style={{width: ['1380px']}} className=' mx-auto bg-base-100'>
       <Navbar></Navbar>
       <Home></Home>
       <Footer></Footer>
