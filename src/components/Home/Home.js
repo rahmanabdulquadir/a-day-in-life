@@ -17,7 +17,7 @@ const Home = () => {
     // console.log(activity)
 }
   return (
-    <div className='grid grid-cols-5 mt-10'>
+    <div className='grid grid-cols-7 justify-center mt-10'>
       <Activities addToList={addToList} activities={activities}></Activities>
       <AllDetails singleActivity={singleActivity}></AllDetails>
     </div>
