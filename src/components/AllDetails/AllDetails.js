@@ -20,7 +20,22 @@ const AllDetails = ({singleActivity}) => {
           <h2 className='text-l  p-3 bg-white rounded-full font-bold'>50m</h2>
         </div>
       </div>
-      <h1>This is details component : {totalTime}</h1>
+
+      <div className='mt-12'>
+        <h1 className='text-xl font-semibold text-center'>Spent Time Details</h1>
+        <div>
+          <div className='flex justify-between bg-slate-200 py-5 px-4  rounded-md mt-3'>
+            <h1 className='text-l font-semibold'>Total time Spent</h1>
+            <p>{totalTime} Min</p>
+          </div>
+          <div className='flex justify-between bg-slate-200 py-5 px-4 mt-3 rounded-md mt-3'>
+            <h1 className='text-l font-semibold'>Break Time</h1>
+            <p>{totalTime} Min</p>
+          </div>
+        </div>
+      </div>
+      <button className="btn btn-active w-full rounded-lg mt-7">Activity Completed</button>
+
     </div>
   );
 };

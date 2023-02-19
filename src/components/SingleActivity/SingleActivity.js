@@ -3,9 +3,10 @@ import React from "react";
 const SingleActivity = ({ activity, handleAddToList }) => {
   const { name, picture, about, time } = activity;
   return (
-    <div className="card w-80 glass rounded-xl	">
+    <div className="card w-80 glass rounded-xl h-[420px]">
       <figure>
         <img
+        className="h-full w-full"
           src={picture}
           alt="car!"
         />
