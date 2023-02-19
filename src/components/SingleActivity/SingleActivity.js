@@ -1,7 +1,6 @@
 import React from "react";
 
-const SingleActivity = ({ activity }) => {
-  console.log(activity);
+const SingleActivity = ({ activity, handleAddToList }) => {
   const { name, picture, about, time } = activity;
   return (
     <div className="card w-80 glass rounded-xl	">
@@ -16,7 +15,7 @@ const SingleActivity = ({ activity }) => {
         <p>{about}</p>
         <p>Duration: {time} Min</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary rounded-lg">Add To List</button>
+          <button onClick={() => handleAddToList(activity)} className="btn btn-primary rounded-lg">Add To List</button>
         </div>
       </div>
     </div>
