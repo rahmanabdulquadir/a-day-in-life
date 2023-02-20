@@ -22,6 +22,7 @@ const AllDetails = ({singleActivity}) => {
   }
   return (
     <div className='col-span-2 side-cart'>
+      <div className='sticky top-0'>
       <PersonalInfo></PersonalInfo>
       <div className='mt-7 stick'>
         <h1 className='text-xl font-semibold'>Add a break</h1>
@@ -48,6 +49,7 @@ const AllDetails = ({singleActivity}) => {
         </div>
       </div>
       <button className="btn btn-active w-full rounded-lg mt-7">Activity Completed</button>
+      </div>
 
     </div>
   );
